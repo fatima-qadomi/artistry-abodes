@@ -1,0 +1,180 @@
+$primary-color: #BFCFBB;
+$secondary-color: #506e4e;
+$tertiary-color: #738A6E;
+$text-color: #41503d;
+$background-light: #F7F7F7;
+// rgb(65 80 61)
+// $bgggg: #3c4939;
+// $bgggg: #9ab594;
+
+@mixin button-style($bg-color, $hover-color) {
+  background-color: $bg-color;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: $text-color;
+}
+
+p {
+  color: $secondary-color;
+}
+
+.section01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50vh;
+  background-image: linear-gradient(to bottom, $primary-color, $secondary-color);
+
+  .navbar {
+    width: 100%;
+
+    ul {
+      color: #fff;
+
+      li a {
+        &:hover {
+          color: $text-color;
+        }
+      }
+    }
+
+  }
+
+  .text-section {
+    .buttons {
+      .primary-btn {
+        @include button-style($text-color, $tertiary-color);
+      }
+
+      .secondary-btn {
+        @include button-style($tertiary-color, $secondary-color);
+      }
+    }
+
+    p {
+      color: white !important;
+    }
+  }
+}
+
+.shadow-custom {
+  box-shadow: 0 10px 20px 10px #00000026;
+  border-radius: 12px;
+}
+
+
+.section02 {
+  background-color: $background-light;
+
+  .boxes {
+    .service-box {
+      background: white;
+
+      .content {
+        h3 {
+          font-size: 1.25rem;
+          font-weight: 650;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1rem;
+          margin-bottom: 1.5rem;
+        }
+
+        a {
+          @include button-style($secondary-color, $tertiary-color);
+        }
+
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+
+
+}
+
+.section03 {
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+
+    .video-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .video-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 800px;
+
+      button {
+        @include button-style($text-color, $tertiary-color);
+      }
+    }
+  }
+
+}
+
+@mixin gallery-image-style($height) {
+  height: $height;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 10px #0000001a;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 10px 10px #00000026;
+  }
+}
+
+
+.gallery-section {
+  background-color: $background-light;
+
+  .gallery-item {
+    img {
+      @include gallery-image-style(20rem);
+    }
+  }
+}
+
+.designers {
+  background: linear-gradient(to bottom, $primary-color, $text-color);
+
+  .bg {
+    background-color: #fff;
+  }
+}
