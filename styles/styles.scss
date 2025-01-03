@@ -1,11 +1,9 @@
-$primary-color: #BFCFBB;
-$secondary-color: #506e4e;
-$tertiary-color: #738A6E;
-$text-color: #41503d;
-$background-light: #F7F7F7;
-// rgb(65 80 61)
-// $bgggg: #3c4939;
-// $bgggg: #9ab594;
+$light-gray: #BFCFBB;
+$mint-color: #506e4e;
+$tea-color: #738A6E;
+$darkGreen: #41503d;
+$bgLight: #F7F7F7;
+
 
 @mixin button-style($bg-color, $hover-color) {
   background-color: $bg-color;
@@ -23,11 +21,11 @@ $background-light: #F7F7F7;
 h1,
 h2,
 h3 {
-  color: $text-color;
+  color: $darkGreen;
 }
 
 p {
-  color: $secondary-color;
+  color: $mint-color;
 }
 
 .section01 {
@@ -35,7 +33,7 @@ p {
   flex-direction: column;
   align-items: center;
   min-height: 50vh;
-  background-image: linear-gradient(to bottom, $primary-color, $secondary-color);
+  background-image: linear-gradient(to bottom, $light-gray, $mint-color);
 
   .navbar {
     width: 100%;
@@ -45,7 +43,7 @@ p {
 
       li a {
         &:hover {
-          color: $text-color;
+          color: $darkGreen;
         }
       }
     }
@@ -55,11 +53,11 @@ p {
   .text-section {
     .buttons {
       .primary-btn {
-        @include button-style($text-color, $tertiary-color);
+        @include button-style($darkGreen, $tea-color);
       }
 
       .secondary-btn {
-        @include button-style($tertiary-color, $secondary-color);
+        @include button-style($tea-color, $mint-color);
       }
     }
 
@@ -76,7 +74,7 @@ p {
 
 
 .section02 {
-  background-color: $background-light;
+  background-color: $bgLight;
 
   .boxes {
     .service-box {
@@ -95,7 +93,7 @@ p {
         }
 
         a {
-          @include button-style($secondary-color, $tertiary-color);
+          @include button-style($mint-color, $tea-color);
         }
 
       }
@@ -140,7 +138,7 @@ p {
       max-width: 800px;
 
       button {
-        @include button-style($text-color, $tertiary-color);
+        @include button-style($darkGreen, $tea-color);
       }
     }
   }
@@ -162,7 +160,7 @@ p {
 
 
 .gallery-section {
-  background-color: $background-light;
+  background-color: $bgLight;
 
   .gallery-item {
     img {
@@ -172,7 +170,7 @@ p {
 }
 
 .designers {
-  background: linear-gradient(to bottom, $primary-color, $text-color);
+  background: linear-gradient(to bottom, $light-gray, $darkGreen);
 
   .bg {
     background-color: #fff;

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Artistry Abodes</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #BFCFBB, #506e4e);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            max-width: 1200px;
+            margin: 50px auto;
+            height: 80vh;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .image-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .login-section {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #506e4e;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            font-size: 14px;
+            color: #555;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+
+        button {
+            background-color: #506e4e;
+            color: white;
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #6b8d68;
+        }
+
+        .footer {
+            margin-top: 20px;
+        }
+
+        .footer p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .footer a {
+            color: #506e4e;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                height: auto;
+                width: 60%;
+
+            }
+
+            .image-section img {
+                max-height: 410px;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .login-section {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width : 770) {
+            .image-section img {
+                max-height: 50px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        @media (max-width: 450px) {
+
+            .login-section {
+                padding: 15px;
+            }
+
+            .image-section img {
+                max-height: 200px;
+                min-width: 250px;
+            }
+        }
+
+        @media (max-width: 395px) {
+            .container {
+                min-width: 250px;
+            }
+
+            .image-section img {
+                max-height: 200px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="assets/imgs/login-page01.jpg" alt="Artistry Abodes">
+        </div>
+        <div class="login-section">
+            <h1>Login to Artistry Abodes</h1>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <div class="footer">
+                <p>Forgot your password? <a href="#">Click here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
