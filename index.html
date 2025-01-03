@@ -6,32 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artistry Abodes</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="./src/styles.css" rel="stylesheet">
+
 </head>
 
 <body>
     <div class="w-full">
         <div class="section01">
-            <nav class="navbar w-full mb-0">
-                <div class="flex flex-wrap items-center justify-between px-4 md:px-8 lg:px-16 py-3">
+            <nav class="mb-0 w-full navbar">
+                <div class="flex flex-wrap justify-between items-center px-4 md:px-8 lg:px-16 py-3">
                     <div class="flex-shrink-0">
                         <img src="assets/imgs/ARTlogo.png" alt="Artistry Abodes Logo" class="rounded-lg">
                     </div>
                     <ul
-                        class="flex flex-wrap items-center justify-center md:space-x-6 gap-4 text-lg font-semibold mt-4 md:mt-0 list-none">
+                        class="flex flex-wrap justify-center items-center gap-4 md:space-x-6 mt-4 md:mt-0 font-semibold text-lg list-none">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
                         <li><a href="#servicesID">Services</a></li>
                         <li><a href="#galleryID">Gallery</a></li>
-                        <li><a href="#contactID">Contact</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                        <li>
+                            <a href="login.html" class="flex items-center gap-2">
+                                <i class="fa-user-circle fas"></i> Login
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>
 
-            <section class="flex flex-col md:flex-row items-center px-4 md:px-8 lg:px-16 py-12 min-h-[50vh]">
-                <div class="text-section w-full md:w-1/2 text-center md:text-lgb-8 md:mb-0 ml-2">
-                    <h1 class="text-4xl font-extrabold mb-4 tracking-wider">DESIGNING SPACES THAT INSPIRE</h1>
-                    <p class="text-lg mb-6">
+            <section class="flex md:flex-row flex-col items-center px-4 md:px-8 lg:px-16 py-12 min-h-[50vh]">
+                <div class="md:mb-0 ml-2 w-full md:w-1/2 text-center text-section md:text-lgb-8">
+                    <h1 class="mb-4 font-extrabold text-4xl tracking-wider">DESIGNING SPACES THAT INSPIRE</h1>
+                    <p class="mb-6 font-ysabeau text-lg">
                         At Artistry Abodes, we craft designs that go beyond aesthetics, merging functionality and beauty
                         to
                         <br> transform homes, offices, and outdoor spaces. Whether it's a modern office, a serene
@@ -39,60 +46,60 @@
                         or a
                         dream home, we bring your vision to life with precision and creativity.
                     </p>
-                    <div class="buttons flex justify-center md:justify-start space-x-4 gap-4">
-                        <a href="#" class="btn primary-btn">
+                    <div class="flex justify-center md:justify-start gap-4 space-x-4 buttons">
+                        <a href="#" class="font-ysabeau btn primary-btn">
                             Browse Our Creations
                         </a>
-                        <a href="#" class="btn secondary-btn">
+                        <a href="#" class="font-ysabeau btn secondary-btn">
                             Request a Consultation
                         </a>
                     </div>
                 </div>
-                <div class="container mx-auto">
+                <div class="mx-auto container">
                     <img src="assets/imgs/im01.jpg" alt="Design inspiration"
-                        class="w-auto max-w-full mx-auto rounded-lg h-auto max-h-[510px] shadow-custom mr-8">
+                        class="shadow-custom mx-auto mr-8 rounded-lg w-auto max-w-full h-auto max-h-[510px]">
                 </div>
             </section>
 
         </div>
 
-        <div class="section02 py-8 md:py-12 lg:py-16">
-            <div class="title text-center mb-12">
-                <h2 class="text-3xl font-bold mb-4">Our Services</h2>
+        <div class="py-8 md:py-12 lg:py-16 section02" id="servicesID">
+            <div class="mb-12 text-center title">
+                <h2 class="mb-4 font-bold font-ysabeau text-3xl">Our Services</h2>
                 <p class="text-lg">Transform your spaces with our specialized design services tailored to
                     your needs.</p>
             </div>
-            <div class="boxes container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="service-box shadow-md rounded-lg overflow-hidden flex flex-col items-center text-center">
+            <div class="gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-auto px-4 boxes container">
+                <div class="flex flex-col items-center shadow-md rounded-lg text-center overflow-hidden service-box">
                     <img src="assets/imgs/box001.jpg" alt="Home Design" class="w-full h-64 object-cover">
-                    <div class="content p-6 flex flex-col items-center">
+                    <div class="flex flex-col items-center p-6 content">
                         <h3>Interior Design</h3>
                         <p>
                             We create stylish, functional interiors that reflect your personality.
                         </p>
-                        <a href="#" class="btn mt-4">Learn
+                        <a href="#" class="mt-4 btn">Learn
                             More</a>
                     </div>
                 </div>
-                <div class="service-box shadow-md rounded-lg overflow-hidden flex flex-col items-center text-center">
+                <div class="flex flex-col items-center shadow-md rounded-lg text-center overflow-hidden service-box">
                     <img src="assets/imgs/box02.png" alt="Office Design" class="w-full h-64 object-cover">
-                    <div class="content p-6 flex flex-col items-center">
+                    <div class="flex flex-col items-center p-6 content">
                         <h3>Architectural Design</h3>
                         <p>
                             Designing and planning structures that inspire and function efficiently.
                         </p>
-                        <a href="#" class="btn mt-4">Learn
+                        <a href="#" class="mt-4 btn">Learn
                             More</a>
                     </div>
                 </div>
-                <div class="service-box shadow-md rounded-lg overflow-hidden flex flex-col items-center text-center">
+                <div class="flex flex-col items-center shadow-md rounded-lg text-center overflow-hidden service-box">
                     <img src="assets/imgs/box003.jpg" alt="Farmhouse Design" class="w-full h-64 object-cover">
-                    <div class="content p-6 flex flex-col items-center">
+                    <div class="flex flex-col items-center p-6 content">
                         <h3>Renovation Services</h3>
                         <p>
                             Renovate and modernize your spaces with our expert services.
                         </p>
-                        <a href="#" class="btn mt-4">Learn
+                        <a href="#" class="mt-4 btn">Learn
                             More</a>
                     </div>
                 </div>
@@ -100,15 +107,15 @@
 
         </div>
 
-        <div class="section03 py-4">
+        <div class="py-4 section03">
             <section class="video-container">
                 <video autoplay muted loop class="video-background">
                     <source src="assets/videos/designers02.mp4" type="video/mp4">
                 </video>
 
                 <div class="video-content">
-                    <h2 class="text-4xl font-bold mb-4 uppercase">Welcome to Our Space</h2>
-                    <p class="text-lg mb-6">
+                    <h2 class="mb-4 font-bold text-4xl uppercase">Welcome to Our Space</h2>
+                    <p class="mb-6 text-lg">
                         At Artistry Abodes, we blend creativity and innovation to deliver stunning designs that
                         captivate
                         and inspire.
@@ -123,11 +130,11 @@
 
         <div class="section04">
             <section id="galleryID" class="gallery-section">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold">Our Gallery</h2>
+                <div class="mb-8 text-center">
+                    <h2 class="font-bold font-ysabeau text-3xl">Our Gallery</h2>
                     <p class="text-lg">Explore some of our best designs and creative spaces.</p>
                 </div>
-                <div class="container mx-auto py-4 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-auto px-4 py-4 container">
                     <div class="gallery-item">
                         <img src="assets/imgs/gallery013.jpg" alt="">
                     </div>
@@ -159,69 +166,194 @@
             </section>
         </div>
 
-        <div class="section05 designers">
+        <div class="designers section05">
             <section class="py-12">
-                <div class="text-center mb-8">
-                    <h2 class="text-2xl font-bold">Meet Our Creative Minds</h2>
+                <div class="mb-8 text-center">
+                    <h2 class="font-bold font-ysabeau text-2xl">Meet Our Creative Minds</h2>
                 </div>
-                <div class=" max-w-6xl mx-auto">
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div class="bg p-4 rounded-lg shadow-md text-center">
+                <div class="mx-auto max-w-6xl">
+                    <div class="gap-8 grid grid-cols-1 md:grid-cols-3">
+                        <div class="shadow-md p-4 rounded-lg text-center bg">
                             <img src="assets/imgs/designer01.jpg" alt=""
-                                class="mx-auto rounded-full mb-4 w-24 h-24 object-cover">
-                            <p class="italic mb-4 text-sm">
+                                class="mx-auto mb-4 rounded-full w-24 h-24 object-cover">
+                            <p class="mb-4 text-sm italic">
                                 Sophia is the visionary behind Artistry Abodes' innovative designs. With over 7 years of
                                 experience in home aesthetics and space planning, she transforms ordinary spaces into
                                 extraordinary works of art.
                             </p>
-                            <h3 class="text-md font-bold">Sophia Harper - Lead Designer</h3>
+                            <h3 class="font-bold text-md">Sophia Harper - Lead Designer</h3>
                         </div>
 
-                        <div class="bg p-4 rounded-lg shadow-md text-center">
+                        <div class="shadow-md p-4 rounded-lg text-center bg">
                             <img src="assets/imgs/designer02.jpg" alt=""
-                                class="mx-auto rounded-full mb-4 w-24 h-24 object-cover">
-                            <p class="italic mb-4 text-sm">
+                                class="mx-auto mb-4 rounded-full w-24 h-24 object-cover">
+                            <p class="mb-4 text-sm italic">
                                 Liam ensures that every design aligns with structural integrity and architectural
                                 standards, creating spaces that are both beautiful and sustainable.
                             </p>
-                            <h3 class="text-md font-bold">Liam Bennett - Architectural Consultant</h3>
+                            <h3 class="font-bold text-md">Liam Bennett - Architectural Consultant</h3>
                         </div>
 
-                        <div class="bg p-4 rounded-lg shadow-md text-center">
+                        <div class="shadow-md p-4 rounded-lg text-center bg">
                             <img src="assets/imgs/designer03.jpg" alt=""
-                                class="mx-auto rounded-full mb-4 w-24 h-24 object-cover">
-                            <p class="italic mb-4 text-sm">
+                                class="mx-auto mb-4 rounded-full w-24 h-24 object-cover">
+                            <p class="mb-4 text-sm italic">
                                 Amelia is known for her exceptional communication skills. She makes sure clients'
                                 visions are understood and incorporated into the designs, ensuring satisfaction at every
                                 stage.
                             </p>
-                            <h3 class="text-md font-bold">Amelia Wright - Client Relations Specialist</h3>
+                            <h3 class="font-bold text-md">Amelia Wright - Client Relations Specialist</h3>
                         </div>
                     </div>
 
-                    <div class=" flex justify-center gap-8 mt-8">
-                        <div class="bg p-4 rounded-lg shadow-md text-center w-72">
+                    <div class="flex justify-center gap-8 mt-8">
+                        <div class="shadow-md p-4 rounded-lg w-72 text-center bg">
                             <img src="assets/imgs/designer04.jpg" alt=""
-                                class="mx-auto rounded-full mb-4 w-24 h-24 object-cover">
-                            <p class="italic mb-4 text-sm">
+                                class="mx-auto mb-4 rounded-full w-24 h-24 object-cover">
+                            <p class="mb-4 text-sm italic">
                                 Mason brings designs to life with stunning 3D visuals. His work allows clients to see
                                 their dream homes in detail before construction begins.
                             </p>
-                            <h3 class="text-md font-bold">Mason Turner - 3D Visualizer</h3>
+                            <h3 class="font-bold text-md">Mason Turner - 3D Visualizer</h3>
                         </div>
 
-                        <div class="bg p-4 rounded-lg shadow-md text-center w-72">
+                        <div class="shadow-md p-4 rounded-lg w-72 text-center bg">
                             <img src="assets/imgs/designer05.jpg" alt=""
-                                class="mx-auto rounded-full mb-4 w-24 h-24 object-cover">
-                            <p class="italic mb-4 text-sm">
+                                class="mx-auto mb-4 rounded-full w-24 h-24 object-cover">
+                            <p class="mb-4 text-sm italic">
                                 James captures the beauty of Artistry Abodes' projects, creating content that inspires
                                 potential clients and builds a stunning online portfolio.
                             </p>
-                            <h3 class="text-md font-bold">James Fisher - Digital Content Creator</h3>
+                            <h3 class="font-bold text-md">James Fisher - Digital Content Creator</h3>
                         </div>
                     </div>
                 </div>
             </section>
+        </div>
+
+        <div class="section06">
+            <section class="bg-whitelight py-12" id="Testimonials">
+                <div class="mx-auto max-w-7xl text-center text-darkGreen">
+                    <h3 class="mb-2 font-ysabeau text-sm uppercase">What Our Clients Say</h3>
+                    <h2 class="mb-4 font-extrabold text-4xl">Client Testimonials</h2>
+                    <p class="mb-12 font-ysabeau">
+                        Discover the stories behind the transformations we've crafted for our valued clients.
+                    </p>
+
+                    <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                        <div
+                            class="flex items-center space-x-4 hover:bg-white shadow-md p-6 rounded-lg hover:scale-105">
+                            <img src="assets/imgs/star.png" alt="" class="rounded-full w-16 h-16 object-cover" />
+                            <div>
+                                <p class="italic">
+                                    "Artistry Abodes transformed my house into a dream home. Their team was a pleasure
+                                    to work with!"
+                                </p>
+                                <h4 class="mt-2 font-black">Sandra Walton</h4>
+                                <span class="text-sm">CEO, Creative Solutions</span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-center space-x-4 hover:bg-white shadow-md p-6 rounded-lg hover:scale-105">
+                            <img src="assets/imgs/star.png" alt="" class="rounded-full w-16 h-16 object-cover" />
+                            <div>
+                                <p class="italic">
+                                    "Their attention to detail and innovative ideas were truly impressive!"
+                                </p>
+                                <h4 class="mt-2 font-black">Mike Smith</h4>
+                                <span class="text-sm">Founder, BuildSmart</span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-center space-x-4 hover:bg-white shadow-md p-6 rounded-lg hover:scale-105">
+                            <img src="assets/imgs/star.png" alt="" class="rounded-full w-16 h-16 object-cover" />
+                            <div>
+                                <p class="italic">
+                                    "I'm amazed by their professionalism and the quality of their work. Highly
+                                    recommend!"
+                                </p>
+                                <h4 class="mt-2 font-black">Kenny Jones</h4>
+                                <span class="text-sm">Architect, UrbanSpaces</span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-center space-x-4 hover:bg-white shadow-md p-6 rounded-lg hover:scale-105">
+                            <img src="assets/imgs/star.png" alt="" class="rounded-full w-16 h-16 object-cover" />
+                            <div>
+                                <p class="italic">
+                                    "Their ability to turn ideas into reality is outstanding. A seamless experience from
+                                    start to finish!"
+                                </p>
+                                <h4 class="mt-2 font-black">Molly Sanchez</h4>
+                                <span class="text-sm">Interior Designer, HomeScape</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <div class="section07">
+            <footer class="bg-greengradient py-10 text-whitelight" id="footer">
+                <div class="gap-8 grid grid-cols-1 md:grid-cols-4 mx-auto container">
+                    <div>
+                        <h3 class="mb-4 font-bold text-xl">About Us</h3>
+                        <p class="text-meduim text-whitelight">
+                            At Artistry Abodes, we specialize in creating beautifully designed homes that reflect your
+                            vision. Our team of experts ensures a seamless design experience tailored to your needs.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="mb-4 font-bold text-xl">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:underline">Home</a></li>
+                            <li><a href="#" class="hover:underline">About</a></li>
+                            <li><a href="#servicesID" class="hover:underline">Services</a></li>
+                            <li><a href="#Testimonials" class="hover:underline">Testimonials</a></li>
+                            <li><a href="#footer" class="hover:underline">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="mb-4 font-bold text-xl">Contact Us</h3>
+                        <ul class="space-y-2">
+                            <li><i class="fa-phone fas"></i> +962 999 999 999</li>
+                            <li><i class="fa-envelope fas"></i> info@artistryabodes.com</li>
+                            <li><i class="fa-map-marker-alt fas"></i> Amman, Jordan</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="mb-4 font-bold text-xl">Follow Us</h3>
+                        <ul class="flex space-x-3">
+                            <li>
+                                <a href="#" class="block hover:scale-110">
+                                    <img src="assets/imgs/facebooklogo.png" alt="Facebook"
+                                        class="w-8 h-8 object-contain">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:scale-110">
+                                    <img src="assets/imgs/instagramlogo.png" alt="Instagram"
+                                        class="w-8 h-8 object-contain">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:scale-110">
+                                    <img src="assets/imgs/linkedin-logo.svg" alt="LinkedIn"
+                                        class="w-8 h-8 object-contain">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="mt-8 text-center text-sm">
+                    © 2025 Artistry Abodes. All Rights Reserved.
+                </div>
+            </footer>
+
         </div>
     </div>
 </body>
